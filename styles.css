@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+header{
+    
+    background-color:  rgba(219, 213, 213, 0.17);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+   
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+header ul{
+    display: flex;
+    font-size: 20px;
+   padding-top: 10px;
+    
+}
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+header ul li{
+    list-style-type: none;
+    padding-left: 25px;
+}
+.heroPage{
+    display: flex;
+    justify-content: space-around;
+}
+.textPage{
+    padding-top: 180px;
+}
+.textPage h2{
+    font-size: 46px;
+}
+.textPage p{
+    font-size: 20px;
+    line-height: 40px;
+}
+.textPage button{
+    margin-top: 20px;
+    background-color:  #2854C5;
+    font-size: inherit;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-weight: 500;
+    color: white;
+    animation-name: roll;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:normal ;
+    
+}
+@keyframes roll{
+    100%{
+        transform: translate(100px);
+    }
+}
+.prop{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:  rgba(219, 213, 213, 0.17);
+    padding: 50px;
+    font-size: 18px;
+}
+.prop p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.prop figcaption{
+    color: grey;
+}
+.menu{
+    display: none;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.details img{
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+.detText{
+    font-size: 20px;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.testimonials{
+    background-image:linear-gradient(to bottom, rgba(42, 123, 221, 0.305), rgba(13, 31, 231, 0.459));
+    background-position: center;
+   text-align: center;
+  
+   padding: 60px;
+}
+.testimonials h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.indRev{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.review{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.review p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.review img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.review figcaption{
+    max-width: 250px;
+    line-height: 30px;
+}
+.emailSub{
+    text-align: center;
+ 
+}
+.emailForm{
+    padding-top: 150px;
+    font-size: 30px;
+    padding-bottom: 100px;
+    
+}
+::placeholder{
+    font-size: 18px;
+}
+input[type=email]{
+    padding: 10px;
+    width: 300px;
+    margin-top: 30px;
+    border: 1px solid grey;
+}
+input[type=submit]{
+    padding: 8px 20px 8px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #2854C5;
+    border: none;
+    margin-left: 10px;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgba(219, 213, 213, 0.17); 
+    padding: 20px;
+    padding-top: 30px;
+}
+.fastLinks{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fastLinks p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.fastLinks a{
+    text-decoration: none;
+    color: black;
+}
+.fastLinks ul li{
+    list-style-type: none;
+    line-height: 25px;
+}
+.site{
+    font-size: 25px;
+    text-align: center;
+}
+.longi-tech{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.longi-tech ul{
+ list-style-type: none;
+ justify-content: space-around;
+ display: flex; 
+ padding-top: 15px;  
+}
+.icon{
+    font-size: 25px;
+    color: rgb(19, 18, 18);
+}
+@media screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+    }
+    .emailSub{
+        display: none;
+    }
+    .details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .details img{
+        padding-bottom: 40px;
+    }
+    .head{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        background-color: #2855c588;
+        color: white;
+        width: 100%;
+        z-index: 2;
+   
+    }
+    header ul a{
+        color: white;
+    }
+    .open{
+        display: block;
+    }
+    .head ul{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+    }
+    .heroPage{
+        flex-direction: column;
+        word-wrap: break-word;
+        padding-left: 20px;
+    }
+    .heroPage img{
+        width: 300px;
+    }
+    .textPage{
+        padding-top: 50px;
+    }
+    .textPage h2{
+        font-size: 46px;
+    }
+    .textPage p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .textPage button{
+        margin-top: 20px;
+        background-color:  #2854C5;
+        font-size: inherit;
+        border: none;
+        padding: 10px 30px 10px 30px;
+        font-weight: 500;
+        color: white;
+        animation-name: roll;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction:normal ;
+        
+    }
+    .prop{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .prop1,.prop2,.prop3{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:991px) {
+    .textPage{
+        padding-left: 20px;
+    }
+    .details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .details img{
+        padding-bottom: 40px;
+    }
+}
